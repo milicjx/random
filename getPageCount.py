@@ -2,6 +2,8 @@ import re
 import os
 import glob
 
+__author__ = 'milicjx'
+
 countpage = re.compile(r"/Type\s*/Page([^s]|$)", re.MULTILINE | re.DOTALL)
 
 def count_pages(filename):
