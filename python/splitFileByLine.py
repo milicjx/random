@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-__author__ = 'milicjx'
 import os
 
 def split_file(filepath, lines=300): # specify number of lines per file
@@ -22,11 +21,10 @@ def split_file(filepath, lines=300): # specify number of lines per file
                 # write the line to the output file
                 f_out.write(line)
         finally:
-            # close the last output file
             f_out.close()
             
 if __name__ == '__main__':
     with open('split_file.txt', 'w') as f:
-        for x in range(950):
+        for x in range(950): # the last line to split
             f.write('{}\n'.format(x))
-    split_file('split_file.txt')
+    split_file('file_to_split.txt')
