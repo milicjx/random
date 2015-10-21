@@ -1,3 +1,12 @@
+#########################################################
+# work in progress!
+# 
+# program parses through Snort fast alerts based on 
+# timestamp, source IP address, destination IP address 
+# and protocol
+#
+#########################################################
+
 import os
 import sys
 import subprocess
