@@ -1,7 +1,7 @@
 #########################################################
 # work in progress!
 # 
-# program searches for Snort alerts based on 
+# program parses through Snort full alerts based on 
 # timestamp, source IP address, destination IP address 
 # and protocol
 #
