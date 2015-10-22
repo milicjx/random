@@ -16,11 +16,11 @@ if len(sys.argv) < 2:
 	print "Usage: search.py [<fast log file>]"
 	sys.exit()
 
-# assign argument to variable
-f = sys.argv[1] # log name
-
 # check if file exists
-if os.path.isfile(f):
+if os.path.isfile(sys.argv[1]):
+        # assign argument to variable
+        f = sys.argv[1] # log name
+        
 	# parse through the ground truth file (csv)
 	for line in open(f):
 		d = line.split(",")[0]
